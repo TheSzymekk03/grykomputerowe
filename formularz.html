@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gry komputerowe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Photos/favicon-32x32.png" type="image/png">
+</head>
+<body>
+    <div class="wrapper">
+  <header>
+    <h1>Gry komputerowe</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">O mnie</a></li>
+        <li><a href="aktualnosci.html">Aktualności</a></li>
+        <li><a href="recenzje.html">Recenzje gier</a></li>
+        <li><a href="zapowiedzi.html">Zapowiedzi</a></li>
+        <li><a href="poradniki.html">Znajdźki</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="formularz.html">Formularz</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="prezentacja.html">Prezentacja</a></li>
+        <li><a href="gierka.html">Gra i przelicznik</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+            <div class="stats-container">
+            <div id="current-time"></div>
+            <div id="current-date"></div>
+            <div>Odwiedzin: <span id="visit-counter">0</span></div>
+            <div>Czas na stronie: <span id="time-spent">00:00:00</span></div>
+            </div>
+
+     <section class="page-title">
+      <h2>Formularz kontaktowy</h2>
+     </section>
+    <section id="formularz">
+      <form id="kontakt-form">
+        <fieldset>
+          <legend>Dane kontaktowe</legend>
+        <label>Imię: <input type="text" name="imie" required></label>
+        <label>Nazwisko: <input type="text" name="nazwisko" required></label>
+        <label>Email: <input type="email" name="email" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Ulubiona gra:</legend>
+        <label>Gatunek:
+          <select name="typ_gry">
+            <option>FPS</option>
+            <option>RPG</option>
+            <option>Strategia</option>
+            <option>Inne</option>
+          </select>
+        </label>
+        <label>Tytuł:
+          <textarea name="nazwa-gry" id="nazwa-gry" rows="1" cols="20"></textarea>
+        </label>
+      </fieldset>
+        <fieldset>
+          <legend>Zainteresowania:</legend>
+          <label><input type="checkbox" name="zainteresowania" value="easter-eggi"> Motoryzacja</label>
+          <label><input type="checkbox" name="zainteresowania" value="speedruny"> Sport</label>
+          <label><input type="checkbox" name="zainteresowania" value="multiplayer"> Muzyka</label>
+          <label><input type="checkbox" name="zainteresowania" value="multiplayer"> Gry komputrowe</label>
+          <label><input type="checkbox" name="zainteresowania" value="multiplayer"> Programowanie</label>
+        </fieldset>
+        <fieldset>
+          <legend>Dane osobowe</legend>
+          <label>Wiek:
+            <input id="wiek" name="wiek" type="number" min="0" max="130" step="1">
+          </label>
+          <label>Wykształcenie:
+            <label><input type="radio" name="wyksztalcenie" value="Podstawowe">Podstawowe</label>
+            <label><input type="radio" name="wyksztalcenie" value="Średnie">Średnie</label>
+            <label><input type="radio" name="wyksztalcenie" value="Wyższe">Wyższe</label>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Płeć:</legend>
+          <label><input type="radio" name="plec" value="kobieta"> Kobieta</label>
+          <label><input type="radio" name="plec" value="mezczyzna"> Mężczyzna</label>
+        </fieldset>
+        <fieldset>
+                <legend>Twoja opinia</legend>
+                <textarea id="komentarz" name="comment" rows="10" cols="45">
+                </textarea><br>
+                <label for="plik">Prześlij plik</label>
+                <input id="plik" type="file" accept="image/*">
+            </fieldset>
+        <button type="submit">Wyślij</button>
+      </form>
+    </section>
+  </main>
+    </div>
+
+  <footer>
+    <p>Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.</p>
+    <p>Autor: Szymon Andrzejewski, <a href="mailto:szymon.andrzejewski@student.put.poznan.pl">szymon.andrzejewski@student.put.poznan.pl</a></p>
+  </footer>
+  <script src="staty.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

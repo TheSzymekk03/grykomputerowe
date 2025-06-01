@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gry komputerowe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Photos/favicon-32x32.png" type="image/png">
+</head>
+<body>
+    <div class="wrapper">
+  <header>
+    <h1>Gry komputerowe</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">O mnie</a></li>
+        <li><a href="aktualnosci.html">Aktualności</a></li>
+        <li><a href="recenzje.html">Recenzje gier</a></li>
+        <li><a href="zapowiedzi.html">Zapowiedzi</a></li>
+        <li><a href="poradniki.html">Znajdźki</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="formularz.html">Formularz</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="prezentacja.html">Prezentacja</a></li>
+        <li><a href="gierka.html">Gra i przelicznik</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+            <div class="stats-container">
+            <div id="current-time"></div>
+            <div id="current-date"></div>
+            <div>Odwiedzin: <span id="visit-counter">0</span></div>
+            <div>Czas na stronie: <span id="time-spent">00:00:00</span></div>
+            </div>
+
+    <section class="page-title">
+      <h2>Mapa Gothic 1</h2>
+    </section>
+    <section>
+    <div id="map-container" >
+      <img src="Photos/mapagothic.webp" alt="Mapa Gothic 1" usemap="#gothic-map" id="map-image">
+      <map name="gothic-map">
+      <area shape="rect" coords="482,379,624,500" href="#" alt="Stary Obóz" data-name="Stary Obóz" data-description="Pierwsza duża lokacja do której trafiamy.">
+      <area shape="rect" coords="876,444,1038,659" href="#" alt="Bractwo na bagnach" data-name="Bractwo na bagnach" data-description="Obóz wariatów, którzy wierzą, że bóg, którego wielbią, pomoże im wydostać się z Kolonii Górniczej.">
+      <area shape="rect" coords="40,240,200,456" href="#" alt="Nowy Obóz" data-name="Nowy Obóz" data-description="Obóz, w którym wszyscy działają na rzecz wydostania się z Kolonii Górniczej, w przeciwieństwie do bractwa z bagna, mają bardziej przyziemne plany.">
+      <area shape="rect" coords="682,669,779,758" href="#" alt="Górska Forteca" data-name="Górska Forteca" data-description="Rozległa budowla w górach, na której terenie został ukryty jeden z kamieni ogniskujących.">
+      <area shape="rect" coords="709,170,754,233" href="#" alt="Stary Klasztor" data-name="Stary Klasztor" data-description="Ruiny starej budowli, gdzie został ukryty jeden z kamieni ogniskujących.">
+      </map>
+    </div>
+      <div id="map-description" >Najedź na obszar, aby zobaczyć co to za miejscówka. Naciśnij aby dowiedzieć się szczegółów.</div>
+    </section>
+  </main>
+</div>
+
+  <footer>
+    <p>Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.</p>
+    <p>Autor: Szymon Andrzejewski, <a href="mailto:szymon.andrzejewski@student.put.poznan.pl">szymon.andrzejewski@student.put.poznan.pl</a></p>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script src="staty.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gry komputerowe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Photos/favicon-32x32.png" type="image/png">
+</head>
+<body>
+    <div class="wrapper">
+  <header>
+    <h1>Gry komputerowe</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">O mnie</a></li>
+        <li><a href="aktualnosci.html">Aktualności</a></li>
+        <li><a href="recenzje.html">Recenzje gier</a></li>
+        <li><a href="zapowiedzi.html">Zapowiedzi</a></li>
+        <li><a href="poradniki.html">Znajdźki</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="formularz.html">Formularz</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="prezentacja.html">Prezentacja</a></li>
+        <li><a href="gierka.html">Gra i przelicznik</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+            <div class="stats-container">
+            <div id="current-time"></div>
+            <div id="current-date"></div>
+            <div>Odwiedzin: <span id="visit-counter">0</span></div>
+            <div>Czas na stronie: <span id="time-spent">00:00:00</span></div>
+            </div>
+
+    <section class="page-title">
+      <h2>Galeria</h2>
+    </section>
+    <section class="intro">
+      <p>Gry to nie tylko rozrywka i rywalizacja - mogą być prawdziwą sztuką. 
+        Współczesne produkcje zachwycają malarskimi pejzażami, misternie 
+        skomponowanymi kadrami i grafiką, która zapiera dech w piersiach. 
+        Oto kolekcja najbardziej fotogenicznych momentów z ulubionych tytułów, 
+        które udowadniają, że wirtualne światy potrafią konkurować 
+        urodą z najwspanialszymi dziełami malarstwa.</p>
+    </section>
+    <div class="gallery-viewer">
+      <img id="gallery-image" src="Photos/galeria1.jpg" alt="galeria">
+      <p id="game-title" class="game-title">Tytuł gry</p>
+      <div class="controls">
+        <button onclick="showFirst()">Pierwszy</button>
+        <button onclick="showPrevious()">Poprzedni</button>
+        <button onclick="showNext()">Następny</button>
+        <button onclick="showLast()">Ostatni</button>
+      </div>
+    </div>
+    
+  </main>
+</div>
+
+  <footer>
+    <p>Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.</p>
+    <p>Autor: Szymon Andrzejewski, <a href="mailto:szymon.andrzejewski@student.put.poznan.pl">szymon.andrzejewski@student.put.poznan.pl</a></p>
+  </footer>
+
+  <script src="galeria.js"></script>
+  <script src="staty.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

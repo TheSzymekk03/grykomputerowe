@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gry komputerowe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Photos/favicon-32x32.png" type="image/png">
+  <style>
+    /* Dodatkowe style dla tabeli */
+    #tabela-gier {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-size: 0.9em;
+    }
+    
+    #tabela-gier th, #tabela-gier td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #444;
+    }
+    
+    #tabela-gier th {
+      background-color: #3a5c80;
+      color: white;
+    }
+    
+    #tabela-gier tr:nth-child(even) {
+      background-color: #2a2a2a;
+    }
+    
+    #tabela-gier tr:hover {
+      background-color: #3a3a3a;
+    }
+    
+    .highlight {
+      background-color: #4b7cb8;
+      color: white;
+      font-weight: bold;
+    }
+
+
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+  <header>
+    <h1>Gry komputerowe</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">O mnie</a></li>
+        <li><a href="aktualnosci.html">Aktualności</a></li>
+        <li><a href="recenzje.html">Recenzje gier</a></li>
+        <li><a href="zapowiedzi.html">Zapowiedzi</a></li>
+        <li><a href="poradniki.html">Znajdźki</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="formularz.html">Formularz</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="prezentacja.html">Prezentacja</a></li>
+        <li><a href="gierka.html">Gra i przelicznik</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="container">
+
+            <div class="stats-container">
+            <div id="current-time"></div>
+            <div id="current-date"></div>
+            <div>Odwiedzin: <span id="visit-counter">0</span></div>
+            <div>Czas na stronie: <span id="time-spent">00:00:00</span></div>
+            </div>
+
+   <section class="page-title" style="position: relative;">
+      <h2>Recenzje gier komputerowych</h2>
+      <table id="tabela-gier">
+        <thead>
+          <tr>
+            <th rowspan="2">Tytuł</th>
+            <th colspan="2">Informacje</th>
+            <th rowspan="2">Platformy</th>
+            <th rowspan="2">Ocena</th>
+          </tr>
+          <tr>
+            <th>Data wydania</th>
+            <th>Gatunek</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+      
+      <div id="opis-gry" class="opis-gry"></div>
+      
+    </section>
+</main>
+</div>
+<footer>
+    <p>Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.</p>
+    <p>Autor: Szymon Andrzejewski, <a href="mailto:szymon.andrzejewski@student.put.poznan.pl">szymon.andrzejewski@student.put.poznan.pl</a></p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="staty.js"></script>
+</body>
+</html>
